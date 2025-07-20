@@ -28,3 +28,8 @@ python program/DriverListener.py program/program_test_pass.txt
 python program/DriverListener.py program/program_test_no_pass.txt
 ```
 ACa para este algo como: <img width="1272" height="130" alt="imagen" src="https://github.com/user-attachments/assets/92b23154-a649-441c-8fb9-ba3e4bec4674" />
+
+
+## Paso de extender la gramática de ANTLR para incluir otras dos operaciones
+Asi se ve antes de agregarlas probando el archivo `program/program_test_extra`
+<img width="1216" height="173" alt="imagen" src="https://github.com/user-attachments/assets/ade90b46-7fee-44a3-b571-b49542de1cb6" />
