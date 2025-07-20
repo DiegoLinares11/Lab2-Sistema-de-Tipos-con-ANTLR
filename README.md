@@ -33,3 +33,9 @@ ACa para este algo como: <img width="1272" height="130" alt="imagen" src="https:
 ## Paso de extender la gramática de ANTLR para incluir otras dos operaciones
 Asi se ve antes de agregarlas probando el archivo `program/program_test_extra`
 <img width="1216" height="173" alt="imagen" src="https://github.com/user-attachments/assets/ade90b46-7fee-44a3-b571-b49542de1cb6" />
+
+Y aca pues ya esta reconociendo las nuevas operaciones
+<img width="1199" height="74" alt="imagen" src="https://github.com/user-attachments/assets/479b94b0-b7f5-4339-9bfa-a6f3a2d019bd" />
+
+Lo que se hizo fue modificar el .g4 asi: <img width="575" height="152" alt="imagen" src="https://github.com/user-attachments/assets/d8843fb9-66cc-4002-94fc-ea45042a0b05" />
+
