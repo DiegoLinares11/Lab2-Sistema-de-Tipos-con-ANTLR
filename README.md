@@ -42,3 +42,7 @@ Y aca pues ya esta reconociendo las nuevas operaciones
 
 Lo que se hizo fue modificar el .g4 asi: <img width="575" height="152" alt="imagen" src="https://github.com/user-attachments/assets/d8843fb9-66cc-4002-94fc-ea45042a0b05" />
 
+Por ultimo las validaciones nuevas que cree en el listener y en el visitor
+<img width="1281" height="144" alt="imagen" src="https://github.com/user-attachments/assets/908662cd-0c1e-4723-99c9-f690911c5bef" />
+
+
