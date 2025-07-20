@@ -50,3 +50,32 @@ class TypeCheckListener(SimpleLangListener):
     if isinstance(left_type, (IntType, FloatType)) and isinstance(right_type, (IntType, FloatType)):
       return True
     return False
+  
+  def exitModulo(self, ctx: SimpleLangParser.ModuloContext):
+    left_type = self.types[ctx.expr(0)]
+    right_type = self.types[ctx.expr(1)]
+
+    if not isinstance(left_type, IntType) or not isinstance(right_type, IntType):
+        self.errors.append("Modulo (%) only supports integer operands")
+    self.types[ctx] = IntType()
+
+  def exitPower(self, ctx: SimpleLangParser.PowerContext):
+      left_type = self.types[ctx.expr(0)]
+      right_type = self.types[ctx.expr(1)]
+
+      if isinstance(left_type, StringType) or isinstance(right_type, StringType) \
+        or isinstance(left_type, BoolType) or isinstance(right_type, BoolType):
+          self.errors.append("Exponentiation (^) does not support string or bool operands")
+      self.types[ctx] = FloatType() if isinstance(left_type, FloatType) or isinstance(right_type, FloatType) else IntType()
+
+  def exitMulDiv(self, ctx: SimpleLangParser.MulDivContext):
+      left_type = self.types[ctx.expr(0)]
+      right_type = self.types[ctx.expr(1)]
+
+      if ctx.op.text == '/' and ctx.expr(1).getText() == '0':
+          self.errors.append("Division by zero is not allowed")
+  
+      if not self.is_valid_arithmetic_operation(left_type, right_type):
+          self.errors.append(f"Unsupported operand types for * or /: {left_type} and {right_type}")
+      self.types[ctx] = FloatType() if isinstance(left_type, FloatType) or isinstance(right_type, FloatType) else IntType()
+
