@@ -15,6 +15,11 @@ python program/Driver.py program/program_test_pass.txt
 ```python
 python program/Driver.py program/program_test_no_pass.txt
 ```
+Aca como no pasa deberia de decirte algo como:
+<img width="1238" height="74" alt="imagen" src="https://github.com/user-attachments/assets/617e74b6-66de-4bb4-8e82-a2ade75ad4c1" />
+
+
+
 ### Para el listener
 ```python
 python program/DriverListener.py program/program_test_pass.txt
@@ -22,3 +27,4 @@ python program/DriverListener.py program/program_test_pass.txt
 ```python
 python program/DriverListener.py program/program_test_no_pass.txt
 ```
+ACa para este algo como: <img width="1272" height="130" alt="imagen" src="https://github.com/user-attachments/assets/92b23154-a649-441c-8fb9-ba3e4bec4674" />
