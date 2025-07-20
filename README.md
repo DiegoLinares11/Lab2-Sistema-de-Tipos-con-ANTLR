@@ -1,3 +1,12 @@
+Para compilar 
+### Para el listener 
+```python
+java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -listener program/SimpleLang.g4 -o program
+```
+### Para el visitor
+```python
+java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -visitor program/SimpleLang.g4 -o program
+```
 Comandos para correr estos archivos 
 ### Para el visitor
 ```python
